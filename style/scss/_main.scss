@@ -1,0 +1,180 @@
+.menu {
+    width: 6rem;
+    height: 100vh;
+    padding: $padding-20;
+    background-color: $menu-color;
+    overflow: hidden;
+    transition: width 0.5s;
+
+    &:hover {
+        width: 16.25rem;
+    }
+
+    ul {
+        height: 95%;
+        @include position(relative);
+
+        li a {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin: $margin-20 0rem;
+            padding: $padding-12;
+            border-radius: $radius-12;
+            transition: background-color 0.5s;
+
+            &:hover {
+                background-color: $link-items-frame ;
+            }
+
+            i {
+                font-size: $font-28;
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            .img-profile {
+                width: 3.125rem;
+                height: 3.125rem;
+                border-radius: $radius-50;
+                overflow: hidden;
+                border: 0.125rem solid white;
+                flex-shrink: 0;
+            }
+
+        }
+
+        h2 {
+            font-size: $font-20;
+            text-transform: capitalize;
+        }
+    }
+
+    .log-out a {
+        @include position (absolute, $bottom: 0rem);
+        width: 100%;
+
+        &:hover {
+            background-color: #a00;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    margin-inline: $margin-12;
+
+    .title-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0481ff;
+        border-radius: $radius-8;
+        padding: $padding-8;
+    }
+
+    .data-input {
+        flex-wrap: nowrap;
+        gap: 0.625rem;
+
+        .data {
+            margin-block: $margin-8;
+            background-color: $menu-color;
+            transition: 0.5s;
+            padding-block: $padding-50;
+            border-radius: $radius-8;
+            flex-grow: 1;
+            flex-basis: 16.5rem;
+
+            &:hover {
+                background-color: $link-items-frame;
+            }
+
+            i {
+                font-size: $font-24;
+            }
+
+            .inside-data {
+                text-align: center;
+
+                span {
+                    margin-block-start: $margin-12;
+                    font-size: $font-32;
+                }
+            }
+        }
+    }
+}
+
+.three-column-input {
+    margin: $margin-16;
+    gap: 1.5rem;
+    justify-content: center;
+
+    ul {
+        .special {
+            background-color: #0481ff;
+            font-family: Mulish-SemiBold;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-inline: $padding-50;
+            padding-block: $padding-24;
+            background-color: $link-items-frame;
+            margin-block-end: $margin-16 ;
+            border-radius: $radius-8;
+            flex-grow: 1;
+            flex-basis: 17.25rem;
+            background-color: $menu-color;
+            transition: 0.5s;
+
+            &:not(.special):hover {
+                background-color: $link-items-frame;
+            }
+        }
+    }
+
+    .product {
+        span {
+            background-color: transparent;
+            border-radius: $radius-8;
+            padding-block: $padding-8;
+            padding-inline: $padding-12;
+        }
+    }
+
+    .price {
+        span {
+            background-color: rgb(155, 155, 4);
+            border-radius: $radius-8;
+            padding-block: $padding-8;
+            padding-inline: $padding-12;
+        }
+    }
+
+    .count {
+        span {
+            background-color: rgb(3, 135, 25);
+            border-radius: $radius-8;
+            padding-block: $padding-8;
+            padding-inline: $padding-12;
+        }
+    }
+}
+
+
+@media (max-width:991px) {
+    .content {
+        .data-input {
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    }
+}

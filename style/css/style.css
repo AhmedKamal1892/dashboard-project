@@ -1,0 +1,201 @@
+@font-face {
+  font-family: Mulish-Regular;
+  src: url(../../font/Mulish-Regular.ttf); }
+@font-face {
+  font-family: Mulish-Medium;
+  src: url(../../font/Mulish-Medium.ttf); }
+@font-face {
+  font-family: Mulish-Light;
+  src: url(../../font/Mulish-Light.ttf); }
+@font-face {
+  font-family: Mulish-SemiBold;
+  src: url(../../font/Mulish-SemiBold.ttf); }
+@font-face {
+  font-family: Mulish-Bold;
+  src: url(../../font/Mulish-Bold.ttf); }
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff; }
+
+html {
+  font-family: Mulish-Regular;
+  font-size: 16px; }
+
+body {
+  background-color: #001; }
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0rem;
+     -moz-padding-start: 0rem;
+          padding-inline-start: 0rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem; }
+
+p {
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.menu {
+  width: 6rem;
+  height: 100vh;
+  padding: 1.25rem;
+  background-color: #123;
+  overflow: hidden;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s; }
+  .menu:hover {
+    width: 16.25rem; }
+  .menu ul {
+    height: 95%;
+    position: relative; }
+    .menu ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 3rem;
+      margin: 1.25rem 0rem;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      -webkit-transition: background-color 0.5s;
+      transition: background-color 0.5s; }
+      .menu ul li a:hover {
+        background-color: #ffffff55; }
+      .menu ul li a i {
+        font-size: 1.75rem; }
+    .menu ul .profile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 3rem; }
+      .menu ul .profile .img-profile {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 0.125rem solid white;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    .menu ul h2 {
+      font-size: 1.25rem;
+      text-transform: capitalize; }
+  .menu .log-out a {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%; }
+    .menu .log-out a:hover {
+      background-color: #a00; }
+
+.content {
+  width: 100%;
+  margin-inline: 0.75rem; }
+  .content .title-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #0481ff;
+    border-radius: 0.5rem;
+    padding: 0.5rem; }
+  .content .data-input {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0.625rem; }
+    .content .data-input .data {
+      margin-block: 0.5rem;
+      background-color: #123;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      padding-block: 3.125rem;
+      border-radius: 0.5rem;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-preferred-size: 16.5rem;
+          flex-basis: 16.5rem; }
+      .content .data-input .data:hover {
+        background-color: #ffffff55; }
+      .content .data-input .data i {
+        font-size: 1.5rem; }
+      .content .data-input .data .inside-data {
+        text-align: center; }
+        .content .data-input .data .inside-data span {
+          -webkit-margin-before: 0.75rem;
+                  margin-block-start: 0.75rem;
+          font-size: 2rem; }
+
+.three-column-input {
+  margin: 1rem;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .three-column-input ul .special {
+    background-color: #0481ff;
+    font-family: Mulish-SemiBold; }
+  .three-column-input ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-inline: 3.125rem;
+    padding-block: 1.5rem;
+    background-color: #ffffff55;
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+    border-radius: 0.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 17.25rem;
+        flex-basis: 17.25rem;
+    background-color: #123;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .three-column-input ul li:not(.special):hover {
+      background-color: #ffffff55; }
+  .three-column-input .product span {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem; }
+  .three-column-input .price span {
+    background-color: #9b9b04;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem; }
+  .three-column-input .count span {
+    background-color: #038719;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem; }
+
+@media (max-width: 991px) {
+  .content .data-input {
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
